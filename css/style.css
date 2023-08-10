@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+
+
+.einstein{
+    position: absolute;
+    width: 13vh;
+    left: 1%;
+    bottom: 1%;
+    border-radius: 30px;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://i.pinimg.com/736x/27/8c/80/278c8023527cf8a4cc12e033e20b1433--gifs-anim%C3%A9s-beautiful-eyes.jpg);
+    padding: 5rem;
+    width: 100%;
+    height: 100%;
+
+
+
+}
+.calc{
+    width: 400px;
+    padding: 1.5em;
+    background-color: rgb(129, 129, 129);
+    color: black;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+}
+.calc h3{
+    font-size: .8em;
+    font-weight: 300;
+    color: rgb(255, 254, 254);
+}
+
+.operations{
+    text-align: right;
+}
+
+#previous-operation,#current-operation{
+    padding: .2em ;
+    overflow-wrap: break-word;
+    min-height: 1.6em;
+}
+#previous-operation{
+    color: #d8d8d8;
+}
+#current-operation{
+    font-size: 3em;
+    font-weight: 700;
+}
+#buttons-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap:3px
+
+}
+
+#buttons-container button{
+    border: 1px solid transparent;
+    border-radius: 5px;
+    height: 4em;
+    font-size: 1.2em;
+    background-color: rgb(233, 165, 39);
+    cursor: pointer;
+}
+#buttons-container .number{
+    background-color: rgb(201, 197, 197);
+}
+#buttons-container button:hover{
+    background-color: crimson;
+    border-color: #1f1e1e;
+}
+
+#buttons-container #equal-btn{
+    grid-column: span 2;
+    background-color: rgb(236, 96, 46);
+}
